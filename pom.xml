@@ -47,7 +47,11 @@
                 <artifactId>aspectjweaver</artifactId>
                 <version>1.9.6</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
 
 
             <!--mysql相关-->
@@ -63,6 +67,11 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>3.4.1</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.2.4</version>
+            </dependency>
             <!--代码生成器-->
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -73,11 +82,29 @@
 
 
 
-            <!--工具-->
+            <!--工具类 在common引用-->
             <!--lombok-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
+                <version>1.18.26</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.47</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.6</version>
+            </dependency>
+
+            <!-- 食用教程https://www.cnblogs.com/zhuchaoli/p/10321488.html-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.7</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

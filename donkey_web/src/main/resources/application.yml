@@ -1,2 +1,25 @@
 server:
-  port: 8081
+  port: 8000
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:xml/*Mapper.xml
+  global-config:
+    # 数据库相关配置
+    db-config:
+      #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
+      field-strategy: not_null
+#      logic-delete-field: isDelete #默认deleted
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+#      id-type: auto
+spring:
+  datasource:
+    url: jdbc:mysql://39.105.8.236:3000/donkey_dev?useUnicode=true&charaterEncoding=utf-8&SSL=true&serverTimezone=Asia/Shanghai
+    username: donkey
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  gson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
