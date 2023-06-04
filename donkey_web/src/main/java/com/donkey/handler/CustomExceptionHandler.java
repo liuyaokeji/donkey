@@ -1,6 +1,6 @@
 package com.donkey.handler;
 
-import com.donkey.infrastructure.exception.BusinessException;
+import com.donkey.exception.BusinessException;
 import com.donkey.response.BaseResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;

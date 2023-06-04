@@ -1,4 +1,4 @@
-package com.donkey.infrastructure.exception;
+package com.donkey.exception;
 
 import com.donkey.response.ResultCode;
 import lombok.EqualsAndHashCode;

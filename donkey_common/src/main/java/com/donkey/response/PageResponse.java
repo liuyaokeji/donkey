@@ -1,4 +1,4 @@
-package com.donkey.response.auth;
+package com.donkey.response;
 
 import lombok.Data;
 
