@@ -1,6 +1,6 @@
 package com.donkey.mapper;
 
-import com.donkey.entity.Message;
+import com.donkey.domain.entity.Message;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

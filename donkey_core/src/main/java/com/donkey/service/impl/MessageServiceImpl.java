@@ -1,6 +1,6 @@
 package com.donkey.service.impl;
 
-import com.donkey.entity.Message;
+import com.donkey.domain.entity.Message;
 import com.donkey.mapper.MessageMapper;
 import com.donkey.service.MessageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

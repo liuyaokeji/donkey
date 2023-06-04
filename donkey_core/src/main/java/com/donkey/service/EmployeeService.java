@@ -1,6 +1,7 @@
 package com.donkey.service;
 
-import com.donkey.entity.Employee;
+import com.donkey.domain.entity.Employee;
+
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

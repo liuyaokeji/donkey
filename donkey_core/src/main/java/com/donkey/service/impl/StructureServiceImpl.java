@@ -1,6 +1,6 @@
 package com.donkey.service.impl;
 
-import com.donkey.entity.Structure;
+import com.donkey.domain.entity.Structure;
 import com.donkey.mapper.StructureMapper;
 import com.donkey.service.StructureService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

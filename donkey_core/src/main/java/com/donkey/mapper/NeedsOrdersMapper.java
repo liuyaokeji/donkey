@@ -1,7 +1,8 @@
 package com.donkey.mapper;
 
-import com.donkey.entity.NeedsOrders;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.donkey.domain.needs.entity.NeedsOrders;
 
 /**
  * <p>

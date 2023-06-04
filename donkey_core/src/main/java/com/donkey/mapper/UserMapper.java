@@ -1,7 +1,8 @@
 package com.donkey.mapper;
 
-import com.donkey.entity.User;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.donkey.domain.User.entity.User;
 
 /**
  * <p>

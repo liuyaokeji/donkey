@@ -1,6 +1,7 @@
 package com.donkey.service;
 
-import com.donkey.entity.Message;
+import com.donkey.domain.entity.Message;
+
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

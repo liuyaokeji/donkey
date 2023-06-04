@@ -1,6 +1,7 @@
 package com.donkey.mapper;
 
-import com.donkey.entity.Wallets;
+import com.donkey.domain.entity.Wallets;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

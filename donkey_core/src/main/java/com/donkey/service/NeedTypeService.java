@@ -1,6 +1,7 @@
 package com.donkey.service;
 
-import com.donkey.entity.NeedType;
+import com.donkey.domain.needs.entity.NeedType;
+
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

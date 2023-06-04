@@ -1,6 +1,7 @@
 package com.donkey.service.impl;
 
-import com.donkey.entity.Wallets;
+import com.donkey.domain.entity.Wallets;
+
 import com.donkey.mapper.WalletsMapper;
 import com.donkey.service.WalletsService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

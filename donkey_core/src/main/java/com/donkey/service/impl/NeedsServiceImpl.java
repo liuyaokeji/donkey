@@ -1,6 +1,6 @@
 package com.donkey.service.impl;
 
-import com.donkey.entity.Needs;
+import com.donkey.domain.needs.entity.Needs;
 import com.donkey.mapper.NeedsMapper;
 import com.donkey.service.NeedsService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

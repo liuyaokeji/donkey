@@ -1,6 +1,7 @@
 package com.donkey.service;
 
-import com.donkey.entity.Order;
+import com.donkey.domain.order.entity.Order;
+
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
