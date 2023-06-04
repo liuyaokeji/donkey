@@ -16,7 +16,7 @@ node {
       checkout([$class: 'GitSCM', branches: [[name: "*/${branch}"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: "${git_auth}", url: "${git_url}"]]])
    }
    stage('编译构建') {
-      sh 'mvn clean install -Dmaven.test.skip=true'
+      sh 'mvn clean package -Dmaven.test.skip=true'
    }
    stage('构建镜像') {
        //定义镜像名称
