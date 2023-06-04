@@ -3,7 +3,7 @@ def git_auth = "mySsh"
 //git的url地址
 def git_url = "https://gitee.com/liuyaokeji/donkey.git"
 //镜像的版本号
-def tag = "latest"
+def tag = "${tag}"
 //Harbor的url地址
 def harbor_url = "registry-vpc.cn-beijing.aliyuncs.com"
 //镜像库项目名称
@@ -22,7 +22,7 @@ node {
        //定义镜像名称
        def imageName = "${project_name}:${tag}"
 
-       sh "docker build -t  ${imageName} . "
+       sh "docker build -f donkey_web/Dockerfile -t  ${imageName} . "
        //对镜像打上标签
        sh "docker tag ${imageName} ${harbor_url}/${harbor_project}/${imageName}"
 

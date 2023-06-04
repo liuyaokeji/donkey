@@ -1,6 +1,8 @@
 package com.donkey.enums;
 
 
+import com.baomidou.mybatisplus.annotation.EnumValue;
+
 /**
  * 枚举示例 枚举统一放在此目录
  */
@@ -11,7 +13,7 @@ public enum DemoGender {
 
     MALE(1,"性别男");
 
-//    @EnumValue
+    @EnumValue
     private int code;
     private String name;
 
