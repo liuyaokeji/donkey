@@ -22,7 +22,7 @@ node {
        //定义镜像名称
        def imageName = "${project_name}:${tag}"
 
-       sh "docker build -f donkey_web/Dockerfile -t  ${imageName} donkey_web/ "
+       sh "docker build -f donkey_web/Dockerfile -t  ${imageName} donkey_web/"
        //对镜像打上标签
        sh "docker tag ${imageName} ${harbor_url}/${harbor_project}/${imageName}"
 
