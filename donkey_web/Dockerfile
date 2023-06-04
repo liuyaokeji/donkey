@@ -7,7 +7,7 @@ EXPOSE 10240
 WORKDIR app
 
 ##将复制指定的docker-demo-0.0.1-SNAPSHOT.jar为容器中的app.jar，相当于拷贝到容器中取了个别名
-ADD  --from=build target/*.jar /app.jar
+COPY target/donkey_web-0.0.1-SNAPSHOT.jar /app.jar
 ##创建一个新的容器并在新的容器中运行命令
 RUN bash -c 'touch /app.jar'
 
