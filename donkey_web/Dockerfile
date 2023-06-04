@@ -10,7 +10,6 @@ WORKDIR app
 COPY target/donkey_web-0.0.1-SNAPSHOT.jar /app.jar
 ##创建一个新的容器并在新的容器中运行命令
 RUN bash -c 'touch /app.jar'
-
 #设置时区
 ENV TZ=PRC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
