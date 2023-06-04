@@ -39,7 +39,7 @@ node {
        }
 
        //部署应用
-        sshPublisher(publishers: [sshPublisherDesc(configName: 'xhd', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: "/liuyao/deploy.sh > /liuyao/test2.log 2>&1 $harbor_url $harbor_project $project_name $tag $port", execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+        sshPublisher(publishers: [sshPublisherDesc(configName: 'lzy', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: "/yhl/CICD/deploy.sh > /yhl/CICD/shell.log 2>&1 $harbor_url $harbor_project $project_name $tag $port", execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
    }
 }
 
