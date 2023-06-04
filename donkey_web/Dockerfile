@@ -5,7 +5,7 @@ MAINTAINER liuyao
 #暴漏容器的10240端口
 EXPOSE 10240
 WORKDIR app
-COPY target/*.jar app.jar
+COPY ./target/*.jar app.jar
 ##将复制指定的docker-demo-0.0.1-SNAPSHOT.jar为容器中的job.jar，相当于拷贝到容器中取了个别名
 #ADD target/learn-admin-1.0-SNAPSHOT.jar /test.jar
 ##创建一个新的容器并在新的容器中运行命令
