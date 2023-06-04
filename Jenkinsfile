@@ -5,7 +5,7 @@ def git_url = "https://gitee.com/liuyaokeji/donkey.git"
 //镜像的版本号
 def tag = "${tag}"
 //Harbor的url地址
-def harbor_url = "registry-vpc.cn-beijing.aliyuncs.com"
+def harbor_url = "registry.cn-beijing.aliyuncs.com"
 //镜像库项目名称
 def harbor_project = "hongliangyao"
 //Harbor的登录凭证ID
@@ -37,9 +37,12 @@ node {
 
            sh "echo 镜像上传成功"
        }
-
        //部署应用
-        sshPublisher(publishers: [sshPublisherDesc(configName: 'lzy', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: "/yhl/CICD/deploy.sh > /yhl/CICD/shell.log 2>&1 $harbor_url $harbor_project $project_name $tag $port", execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+//         sshPublisher(publishers: [sshPublisherDesc(configName: 'lzy', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: "/yhl/CICD/deploy.sh > /yhl/CICD/shell.log 2>&1 $harbor_url $harbor_project $project_name $tag $port", execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+   }
+   stage('部署运行') {
+         //部署应用
+         sshPublisher(publishers: [sshPublisherDesc(configName: 'lzy', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: "/yhl/CICD/deploy.sh > /yhl/CICD/shell.log 2>&1 $harbor_url $harbor_project $project_name $tag $port", execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
    }
 }
 
