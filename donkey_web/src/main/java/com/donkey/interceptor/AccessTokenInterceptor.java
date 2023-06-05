@@ -50,6 +50,12 @@ public class AccessTokenInterceptor implements HandlerInterceptor {
         // 请求id放在log上下文中
         MDC.put(REQUEST_ID, requestId);
         MDC.put(REQUEST_URI, request.getRequestURI());
+
+
+
+
+
+
         return true;
     }
 

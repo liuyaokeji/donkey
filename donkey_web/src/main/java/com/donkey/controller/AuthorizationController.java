@@ -1,4 +1,4 @@
-package com.donkey.interfaces.controller;
+package com.donkey.controller;
 
 import com.donkey.response.auth.LoginResponseVo;
 import com.donkey.response.auth.LogoutResponseVo;
@@ -18,6 +18,8 @@ public class AuthorizationController {
     public LoginResponseVo login(@Validated @RequestBody LoginResponseVo loginResponseVo){
         return null;
     }
+
+
     /**注销接口**/
     public LogoutResponseVo login(@Validated @RequestBody LogoutResponseVo logoutResponseVo){
         return null;
